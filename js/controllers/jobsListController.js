@@ -10,9 +10,6 @@
     {
         $scope.message = 'Jobs';
         $scope.currentPage = 'jobs';
-        $scope.jobCount = 22;
-        $scope.reqCount = 111;
-
 
         $scope.jobData = [
             {

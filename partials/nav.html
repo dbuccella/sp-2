@@ -1,17 +1,14 @@
-<h5>Nav</h5>
-<md-toolbar layout="row">
-    <h1>Starter App</h1>
-</md-toolbar>
+<md-toolbar class= "md-padding md-hue-2" layout="row">
+    <div class="md-toolbar-tools">
+        <img src="assets/img/agerologo.png" style="height: 40px;" />
+        <span flex></span>
+        <h5><span>Logout</span></h5>
+    </div>
+</md-toolbar >
 
 <div class="container" flex layout="row">
-
-    <md-content class="md-padding" " flex id="content " class="lightgreen ">
-
             <md-nav-bar md-selected-nav-item="currentPage " nav-bar-aria-label="navigation links ">
-                <md-nav-item md-nav-click="goto( 'jobs') " name="jobs ">Jobs (22)</md-nav-item>
-                <md-nav-item md-nav-click="goto( 'requests') " name="requests ">Submitted Requests (129)</md-nav-item>
+                <md-nav-item md-nav-href="#jobs" name="jobs">Jobs</md-nav-item>
+                <md-nav-item md-nav-href="#requests" name="requests">Submitted Requests</md-nav-item>
             </md-nav-bar>
-            <span>{{currentPage}}</span>
-
-    </md-content>
 </div>
