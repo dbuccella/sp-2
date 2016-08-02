@@ -1,0 +1,23 @@
+<md-toolbar class= "md-padding md-hue-2" layout="row">
+    <div class="md-toolbar-tools">
+        <img src="assets/img/agerologo.png" style="height: 40px;" />
+        <span flex></span>
+        <h5><span>Logout</span></h5>
+    </div>
+</md-toolbar >
+
+<div class="container" flex layout="row">
+            <md-nav-bar md-selected-nav-item="currentPage " nav-bar-aria-label="navigation links ">
+                <md-nav-item md-nav-href="#jobs" name="jobs">Jobs</md-nav-item>
+                <md-nav-item md-nav-href="#requests" name="requests">Submitted Requests</md-nav-item>
+            </md-nav-bar>
+</div>
+    <md-subheader>Found {{ jobData.length }} Jobs</md-subheader>
+    <md-content class="md-padding" " flex id="content" >
+            <md-list flex>
+                <md-list-item class="md-body-1" ng-repeat="d in jobData" ng-click="null">
+                   {{d.poRefNum}} - {{ d.dispType}} - {{d.date}} - {{d.address}}
+                   <md-divider></md-divider>     
+                </md-list-item>
+            </md-list>
+    </md-content>

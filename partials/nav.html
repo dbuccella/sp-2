@@ -1,0 +1,17 @@
+<h5>Nav</h5>
+<md-toolbar layout="row">
+    <h1>Starter App</h1>
+</md-toolbar>
+
+<div class="container" flex layout="row">
+
+    <md-content class="md-padding" " flex id="content " class="lightgreen ">
+
+            <md-nav-bar md-selected-nav-item="currentPage " nav-bar-aria-label="navigation links ">
+                <md-nav-item md-nav-click="goto( 'jobs') " name="jobs ">Jobs (22)</md-nav-item>
+                <md-nav-item md-nav-click="goto( 'requests') " name="requests ">Submitted Requests (129)</md-nav-item>
+            </md-nav-bar>
+            <span>{{currentPage}}</span>
+
+    </md-content>
+</div>
