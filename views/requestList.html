@@ -1,14 +1,16 @@
 <div ng-include src='"partials/nav.html"'></div>
-
-<md-subheader>
-    <md-input-container>
-        <input ng-model="searchString" />
+ <md-content class="md-no-momentum list-background">
+    <md-input-container class="md-icon-float md-block" flex>
+      <label>Enter search string</label>
+      <md-icon>search</md-icon>
+      <input ng-model="searchString" type="text">
     </md-input-container>
-    Found {{ reqData.length }} Requests
-</md-subheader>
-<md-content class="md-padding" " flex id="content " class="lightgreen ">
-    <md-list flex>
-        <md-list-item class="md-body-1" ng-repeat="r in reqData" ng-click="null">
+<!--  </md-content> -->
+<md-subheader class="md-primary list-background">{{ filtered.length }} Requests found</md-subheader>  
+<!-- <md-content flex> -->
+    <md-list>
+        <md-list-item class="md-body-1" ng-repeat="r in reqData | filter:searchString as filtered" 
+            ng-href="#request/{{r.id}}/{{r.poRefNum}}/">
                    {{r.poRefNum}} - {{ r.dispType}} - {{r.date}} -  {{r.reqType}}/{{r.reqSubType}} - {{r.status}}
             <md-divider></md-divider>     
         </md-list-item>

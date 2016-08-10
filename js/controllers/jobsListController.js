@@ -4,9 +4,9 @@
         .module('matApp')
         .controller('jobsListController', jobsListController);
 
-    jobsListController.$inject = ['$scope'];
+    jobsListController.$inject = ['$scope', '$rootScope'];
     
-    function jobsListController($scope)
+    function jobsListController($scope, $rootScope)
     {
         $scope.message = 'Jobs';
         $scope.currentPage = 'jobs';
@@ -37,6 +37,11 @@
                 address: '1 Main St, Medford MA'
             }
         ];
+
+        //$rootScope.jobCount = $scope.jobData.length; 
+        //$scope.jobCount = $rootScope.jobCount;
+        //$scope.reqCount = $rootScope.reqCount;
+        //$scope.searchString = '';
     }
 
 } )();

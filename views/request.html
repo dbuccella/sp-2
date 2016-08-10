@@ -1,0 +1,49 @@
+<div ng-include src='"partials/nav.html"'></div>
+<md-subheader class="md-primary">
+            <span class="md-headline">Request Detail</span>
+    </md-subheader>  
+
+<section layout="row" flex>
+    <md-sidenav
+        class="md-sidenav-left"
+        md-is-locked-open="true">
+        <md-toolbar>
+            <md-toolbar-tools layout="column" flex>
+                <md-button class="md-raised">Add/Change Equipment</md-button>
+                <md-button class="md-raised">Add/Change Service</md-button>
+                <md-button class="md-raised">GOA</md-button>
+                <md-button class="md-raised">Update Case</md-button>
+                <md-button class="md-raised">Resend Dispatch</md-button>
+            </md-toolbar-tools>
+        </md-toolbar>
+        
+    </md-sidenav>
+<md-content class="md-padding" flex>
+            PO# {{ reqData.poRefNum }}<br/>
+            Dispatch Type: {{ reqData.dispType }}<br/>
+            Date: {{ reqData.date }}<br/>  
+            Request Type: {{ reqData.reqType }}/{{ reqData.reqSubType }}<br/>
+            Status: {{reqData.status }}<br/>
+</md-content>
+</section>
+<!--
+
+<md-card md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Request Detail</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            PO# {{ reqData.poRefNum }}<br/>
+            Dispatch Type: {{ reqData.dispType }}<br/>
+            Date: {{ reqData.date }}<br/>  
+            Request Type: {{ reqData.reqType }}/{{ reqData.reqSubType }}<br/>
+            Status: {{reqData.status }}<br/>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Action 1</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>
+      </md-card>
+    -->

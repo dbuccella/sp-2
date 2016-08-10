@@ -1,14 +1,16 @@
-<md-toolbar class= "md-padding md-hue-2" layout="row">
+<md-toolbar class= "md-hue-2">
     <div class="md-toolbar-tools">
-        <img src="assets/img/agerologo.png" style="height: 40px;" />
-        <span flex></span>
-        <h5><span>Logout</span></h5>
+        <img src="assets/img/agerologo.png" class="logo-size" />
+        <div flex></div>
+        <img src="assets/img/juser.png" class="db-avatar"/>
+        <md-divider></md-divider>
+        <h5><span>Logout <md-icon class="md-fab md-mini">exit_to_app</md-icon></span></h5>
     </div>
 </md-toolbar >
 
 <div class="container" flex layout="row">
-            <md-nav-bar md-selected-nav-item="currentPage " nav-bar-aria-label="navigation links ">
-                <md-nav-item md-nav-href="#jobs" name="jobs">Jobs</md-nav-item>
-                <md-nav-item md-nav-href="#requests" name="requests">Submitted Requests</md-nav-item>
+            <md-nav-bar class="md-raised" md-selected-nav-item="currentPage" nav-bar-aria-label="navigation links ">
+                <md-nav-item md-nav-href="#jobs" name="jobs" >Jobs</md-nav-item>
+                <md-nav-item md-nav-href="#requests" name="requests" >Submitted Requests</md-nav-item>
             </md-nav-bar>
 </div>

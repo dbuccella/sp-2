@@ -1,0 +1,21 @@
+.md-errors-spacer:empty { 
+    display: none; 
+}
+
+.logo-size {
+    height: 40px;
+}
+
+.logo-size-sm {
+    height: 30px;
+}
+
+.db-avatar {
+    height: 55px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* padding: 5px; */
+}
+.list-background {
+    background-color: #eee;
+}
